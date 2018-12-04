@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
         little.lifeDay();
         little.getInfo();
     }
- {   Rat little("Horror");
+ {   Rat little("Terror");
     little.lifeDay();
     little.getInfo();
     little.lifeDay();
