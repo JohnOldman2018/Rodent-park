@@ -5,36 +5,64 @@
 
 int main(int argc, char *argv[])
 {
+
     QCoreApplication a(argc, argv);
-    qDebug() << "Heeelo all Rodent";
+    qDebug() << "Hail to the Rodent!";
     {
-        Rodent hamster("Ham");
-        qDebug()<< "Ham name : " << hamster.getName();
-        qDebug()<< "Ham weigth: " <<  hamster.getWeight();
-
+        Rodent hamster("Sam");
         hamster.lifeDay();
-        qDebug()<< "Ham weigth: " <<  hamster.getWeight();
-
-        qDebug()<< "Ham's info: " <<  hamster.getInfo();
-
+        hamster.getInfo();
         hamster.lifeDay();
-        qDebug()<< "Ham weigth: " <<  hamster.getWeight();
-
-     //   hamster.addTwoGrams();
-
+ //       hamster.addCheese(); // Если в клетку добавить сыр.
         hamster.lifeDay();
-        qDebug()<< "Ham weigth: " <<  hamster.getWeight();
-
-
-//        qDebug()<< "Trying to feed Ham with 5.6 gm.";
-//        hamster.feed(5.6);
-
+        hamster.getInfo();
+        qDebug()<< "Trying to feed the rodent with 5.6 gm.";
+        hamster.feed(5.6);
+        hamster.getInfo();
         hamster.lifeDay();
-        qDebug()<< "Ham weigth: " <<  hamster.getWeight();
-
+        hamster.getInfo();
+        hamster.lifeDay();
+        hamster.getInfo();
+        hamster.lifeDay();
+        hamster.getInfo();
         //hamster.weight = 152.0;
         //qDebug()<<  "new Ham weigth: " <<  hamster.weight;
     }
+    {
+        Hamster little("Dan");
+        little.lifeDay();
+        little.getInfo();
+        little.lifeDay();
+ //       little.addCheese(); // Если в клетку добавить сыр.
+        little.lifeDay();
+        little.getInfo();
+ //       qDebug()<< "Trying to feed the rodent with 5.6 gm.";
+ //       little.feed(5.6);
+        little.getInfo();
+        little.lifeDay();
+        little.getInfo();
+        little.lifeDay();
+        little.getInfo();
+        little.lifeDay();
+        little.getInfo();
+    }
+ {   Rat little("Horror");
+    little.lifeDay();
+    little.getInfo();
+    little.lifeDay();
+       little.addCheese(); // Если в клетку добавить сыр.
+    little.lifeDay();
+    little.getInfo();
+       qDebug()<< "Trying to feed the rodent with 5.6 gm.";
+       little.feed(5.6);
+    little.getInfo();
+    little.lifeDay();
+    little.getInfo();
+    little.lifeDay();
+    little.getInfo();
+    little.lifeDay();
+    little.getInfo();
+}
     Rodent mouse("Mous");
     qDebug()<< mouse.getName();
 
@@ -46,13 +74,13 @@ int main(int argc, char *argv[])
         m1.lifeDay();
         qDebug()<< "Mouse weigth: " <<  m1.getWeight();
 
-        m1.addTwoGrams();
+        m1.addCheese();
         qDebug()<< "Mouse weigth: " <<  m1.getWeight();
 
         m1.lifeDay();
         qDebug()<< "Mouse weigth: " <<  m1.getWeight();
 
-        m1.addTwoGrams();
+        m1.addCheese();
 //        qDebug()<< "Trying to feed m1 with 5.6 gm.";
 //        m1.feed(5.6);
 
@@ -62,7 +90,7 @@ int main(int argc, char *argv[])
         m1.lifeDay();
         qDebug()<< "Mouse weigth: " <<  m1.getWeight();
 
-        m1.addTwoGrams();
+        m1.addCheese();
 
         m1.lifeDay();
         qDebug()<< "Mouse weigth: " <<  m1.getWeight();
