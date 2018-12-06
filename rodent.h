@@ -24,7 +24,7 @@ public:
 
     double getWeight() {return weight;}
 
-    void getInfo();
+    QString getInfo();
     // Add function - get Info, return QString with all information
 
     void feed(double food); // Feed rodent with some gramm of food

@@ -46,10 +46,14 @@ int main(int argc, char *argv[])
         little.lifeDay();
         little.getInfo();
     }
- {   Rat little("Terror");
+ {   Rat little("The Stainless Steel Rat");
+        int age = 0;
+        do {
     little.lifeDay();
+    age++;
     little.getInfo();
-    little.lifeDay();
+        } while (age<500);
+   /* little.lifeDay();
        little.addCheese(); // Если в клетку добавить сыр.
     little.lifeDay();
     little.getInfo();
@@ -61,7 +65,7 @@ int main(int argc, char *argv[])
     little.lifeDay();
     little.getInfo();
     little.lifeDay();
-    little.getInfo();
+    little.getInfo();*/
 }
     Rodent mouse("Mous");
     qDebug()<< mouse.getName();

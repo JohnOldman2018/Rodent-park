@@ -1,4 +1,5 @@
 #include "rodent.h"
+#include <QString>
 
 Rodent::Rodent(QString name)
 {
@@ -39,9 +40,10 @@ bool Rodent::lifeDay()
     return true;
 }
 
-void Rodent::getInfo() {
+QString Rodent::getInfo() {
     QString qsTemp = "Info on %1: age is %2, weight is %3 and expected life is %4 days";
-    qDebug() << qsTemp.arg(name).arg(age).arg(weight).arg(maxLifeSpan);
+    qDebug() << (QString)qsTemp.arg(name).arg(age).arg(weight).arg(maxLifeSpan);
+    return qsTemp;
 }
 
 void Rodent::addCheese() {
